@@ -1,0 +1,73 @@
+:root {
+    --pinkred: #f32e45;
+    --wine: #a90a42;
+    --red: rgb(255, 10, 63);
+    --pink: rgba(255, 28, 60, 0.9);
+    --orange: rgba(255, 163, 24, 0.7);
+    --orangered: rgba(255, 115, 0, 0.938);
+    --lobster: 'Lobster', cursive;
+    --lobster2: 'Lobster Two', cursive;
+    --font-size: 350%;
+}
+
+#header {
+    color: var(--orangered);
+    font-size: var(--font-size);
+    font-family: var(--lobster2)
+}
+
+#image {
+    width: 200px;
+    display:block;
+    margin:auto;
+}
+
+#btn {
+    background: rgb(4, 167, 66);
+    color: white;
+    border: 2px solid gray;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: var(--lobster);
+    font-size: 1.4em;
+    transition-duration: 0.3s;
+}
+
+#btn:hover {
+    background: orange;
+}
+
+#btn:focus {
+    background: orangered;
+    outline:none;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20px,1fr));
+    grid-gap:1vw;
+}
+
+.red-box, .purple-box, .orange-box, .blue-box {
+    padding: 5em;
+}
+
+.red-box {
+    background-color: var(--red);
+}
+
+.blue-box {
+    background-color: dodgerblue;
+}
+
+.orange-box {
+    background-color: var(--orange);
+}
+
+.purple-box {
+    --pink:#8100fa;
+    background-color: var(--pink);
+}
